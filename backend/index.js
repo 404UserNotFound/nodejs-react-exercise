@@ -1,27 +1,14 @@
-import express from 'express';
-import cors from 'cors';
-import fs from 'fs';
+const express = require('express');
+const cors = require('cors');
+const companiesRoutes = require('./routes/companies');
 
 const app = express();
-const port = 3001;
-
 app.use(cors());
+app.use(express.json());
 
-let companies = [];
+app.use('/api/companies', companiesRoutes);
 
-try {
-    const rawData = fs.readFileSync('./data.json', 'utf-8');
-    const parsed = JSON.parse(rawData);
-    companies = parsed.items || [];
-    console.log(`Loaded ${companies.length} companies from local file.`);
-} catch (err) {
-    console.error('Failed to load local data.json:', err.message);
-}
-
-app.get('/api/companies', (req, res) => {
-    res.json(companies);
-});
-
-app.listen(port, () => {
-    console.log(`API server running on http://localhost:${port}`);
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });

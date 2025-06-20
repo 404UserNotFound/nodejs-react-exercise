@@ -1,0 +1,7 @@
+.industryDataExceptionMessageTitle {
+    @apply text-center text-gray-600 mt-6;
+}
+
+.inusetryDataExceptionMessage {
+    @apply text-sm mt-2;
+}

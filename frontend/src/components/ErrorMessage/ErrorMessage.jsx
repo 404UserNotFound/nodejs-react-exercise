@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './ErrorMessage.module.css';
 
 const ErrorMessage = ({ message }) => (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-            <div className="text-red-600 text-xl mb-4">Error loading companies</div>
-            <p className="text-gray-600">{message}</p>
-            <p className="text-sm text-gray-500 mt-2">
+    <div className={styles.errorBackground}>
+        <div className={styles.errorMessageCenter}>
+            <div className={styles.errorMessageTitle}>Error loading companies</div>
+            <p className={styles.errorMessageException}>{message}</p>
+            <p className={styles.errorMessage}>
                 Make sure your Express server is running on http://localhost:3001
             </p>
         </div>

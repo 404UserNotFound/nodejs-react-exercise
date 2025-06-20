@@ -1,0 +1,19 @@
+.layoutBackground {
+    @apply min-h-screen bg-gray-50 py-12 px-4;
+}
+
+.layoutContainer {
+    @apply max-w-6xl mx-auto;
+}
+
+.layoutPageHeader {
+    @apply text-center mb-8;
+}
+
+.layoutPageTitle {
+    @apply text-3xl font-bold text-gray-900 mb-2;
+}
+
+.layoutPageSubtitle {
+    @apply text-gray-600;
+}
