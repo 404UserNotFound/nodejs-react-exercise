@@ -1,0 +1,19 @@
+.errorBackground {
+    @apply min-h-screen bg-gray-50 flex items-center justify-center;
+}
+
+.errorMessageCenter {
+    @apply text-center;
+}
+
+.errorMessageTitle {
+    @apply text-red-600 text-xl mb-4;
+}
+
+.errorMessageException {
+    @apply text-gray-600;
+}
+
+.errorMessage{
+    @apply text-sm text-gray-500 mt-2;
+}

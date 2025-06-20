@@ -1,8 +1,8 @@
 import React from 'react';
 import fallbackLogo from '../../assets/MissingLogoPlaceholder.png';
-import styles from './CompanyCard.module.css';
+import styles from './CompanyListItem.module.css';
 
-const CompanyCard = ({ company }) => {
+const CompanyListItem = ({ company }) => {
     return (
         <div className={`${styles.companyListItem} group`}>
             <div className={styles.companyLabel}>
@@ -27,4 +27,4 @@ const CompanyCard = ({ company }) => {
     );
 };
 
-export default CompanyCard;
+export default CompanyListItem;

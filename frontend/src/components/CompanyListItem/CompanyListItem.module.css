@@ -7,7 +7,7 @@
 }
 
 .companyLogo {
-    @apply w-8 h-8 rounded-lg overflow-hidden flex-shrink-0 bg-white shadow-sm;
+    @apply w-8 h-8 rounded overflow-hidden flex-shrink-0 bg-white shadow-sm;
 }
 
 .logoSizing {

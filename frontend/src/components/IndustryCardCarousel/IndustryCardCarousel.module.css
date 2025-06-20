@@ -1,0 +1,19 @@
+.carouselChevron {
+    @apply w-6 h-6 rounded-full border bg-white shadow-sm flex items-center justify-center transition-all duration-200;
+}
+
+.carouselChevronActive {
+    @apply text-gray-600 hover:text-gray-800 hover:shadow-md cursor-pointer;
+}
+
+.carouselChevronDisabled {
+    @apply text-gray-300 cursor-not-allowed;
+}
+
+.carouselPageCount {
+    @apply text-xs text-gray-500;
+}
+
+.carouselSpacing {
+    @apply w-6 h-6;
+}

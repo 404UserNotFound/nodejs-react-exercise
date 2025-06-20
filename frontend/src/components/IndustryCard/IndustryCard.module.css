@@ -1,0 +1,39 @@
+.industryCardBase {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col;
+}
+
+.industryCardHeader {
+    @apply px-6 py-4 border-b border-gray-100 bg-white flex-shrink-0;
+}
+
+.industryCardTitle {
+    @apply flex items-center justify-between mb-6;
+}
+
+.industryCardTitleText {
+    @apply text-lg font-semibold text-gray-800 capitalize;
+}
+
+.industryCardTitleJobCount {
+    @apply flex items-center space-x-4;
+}
+
+.industryCardTitleJobFont {
+    @apply text-gray-400 text-sm font-semibold;
+}
+
+.industryCardLabels {
+    @apply flex items-center justify-between;
+}
+
+.industryCardLabelFont {
+    @apply text-gray-500 text-xs;
+}
+
+.companyListContainer {
+    @apply flex-1 overflow-y-auto;
+}
+
+.industryCardCarousel {
+    @apply px-6 py-2 flex items-center justify-between flex-shrink-0;
+}

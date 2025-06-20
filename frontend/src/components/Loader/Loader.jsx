@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './Loader.module.css';
 
 const Loader = () => (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
-            <p className="mt-2 text-gray-600">Loading companies...</p>
+    <div className={styles.loaderBackground}>
+        <div className={styles.loaderTextCenter}>
+            <div className={styles.loaderSpinner}></div>
+            <p className={styles.loaderTextFont}>Loading companies...</p>
         </div>
     </div>
 );

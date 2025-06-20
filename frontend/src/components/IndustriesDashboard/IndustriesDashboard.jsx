@@ -1,13 +1,20 @@
 import React from 'react';
 import IndustryCard from "../IndustryCard/IndustryCard.jsx";
-import styles from './CompanyCardList.module.css';
+import styles from './IndustriesDashboard.module.css';
 
-const CompanyCardList = ({ industriesData }) => {
-    const totalCompanies = industriesData.reduce((sum, industry) => sum + industry.companies.length, 0);
-    const totalJobs = industriesData.reduce((sum, industry) =>
-        sum + industry.companies.reduce((jobSum, company) => jobSum + company.total_jobs_available, 0), 0
+const IndustriesDashboard = ({ industriesData = [] }) => {
+    const totalCompanies = industriesData.reduce(
+        (sum, industry) => sum + (industry.companies?.length ?? 0), 0
     );
-    // todo: rename this file
+    const totalJobs = industriesData.reduce(
+        (sum, industry) =>
+            sum +
+            (industry.companies?.reduce(
+                (jobSum, company) => jobSum + (company.total_jobs_available ?? 0),
+                0
+            ) ?? 0),
+        0
+    );
     return (
         <div className={styles.contentSize}>
             <div className={styles.summaryCard}>
@@ -36,4 +43,4 @@ const CompanyCardList = ({ industriesData }) => {
     );
 };
 
-export default CompanyCardList;
+export default IndustriesDashboard;
