@@ -1,0 +1,27 @@
+.contentSize {
+    @apply space-y-6;
+}
+
+.summaryCard {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-4 sm:p-6;
+}
+
+.summaryGrid {
+    @apply grid grid-cols-1 sm:grid-cols-3 gap-4 text-center;
+}
+
+.summaryNumberBlack {
+    @apply text-xl sm:text-2xl font-bold text-gray-900;
+}
+
+.summaryNumberBlue {
+    @apply text-xl sm:text-2xl font-bold text-blue-600;
+}
+
+.summaryLabel{
+    @apply text-sm sm:text-base text-gray-600;
+}
+
+.industriesGrid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6;
+}
